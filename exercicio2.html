@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 2</title>
+</head>
+<body>
+    
+    <h1> Programa de médias </h1>
+
+    <script>
+
+        let nota1 = parseFloat(prompt("Digite a primeira nota: "))
+        let nota2 = parseFloat(prompt("Digite a segunda nota: "))
+        let nota3 = parseFloat(prompt("Digite a terceira nota: "))
+
+        if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+            alert("Erro: você deve digitar um número válido para as notas.")
+        } else {
+            let media = (nota1 + nota2 + nota3) / 3
+            alert(`A média das notas é: ${media.toFixed(2)}`)
+            document.write(`A média das notas é: ${media.toFixed(2)}`)
+        }
+
+        let nota4 = parseFloat(prompt("Digite a quarta nota: "))
+        let nota5 = parseFloat(prompt("Digite a quinta nota: "))
+        let nota6 = parseFloat(prompt("Digite a sexta nota: "))
+
+        if (isNaN(nota4) || isNaN(nota5) || isNaN(nota6)) {
+            alert("Erro: você deve digitar um número válido para as notas.")
+        } else {
+            let media2 = (nota4 + nota5 + nota6) / 3
+            alert(`A média das notas é: ${media2.toFixed(2)}`)
+            document.write(`<br>A média das notas é: ${media2.toFixed(2)}`)
+
+            document.write("<br> A média das duas médias é: " + ((media + media2) / 2).toFixed(2))
+        }
+           
+
+
+    </script>
+</body>
+</html>

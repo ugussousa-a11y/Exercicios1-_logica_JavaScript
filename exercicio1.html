@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 1 </title>
+</head>
+<body>
+    
+    <h1> Faça um algoritmo que leia a idade de uma pessoa </h1>
+
+    <p id="resultado"></p>
+
+        <script>
+
+                let anos = parseInt(prompt("Digite a idade em anos: "));
+                const resultado = document.getElementById("resultado");
+
+                if (isNaN(anos)) {
+                    resultado.innerText = "Erro: você deve digitar um número válido para anos.";
+                } else if (anos < 0) {
+                    resultado.innerText = "Erro: idade não pode ser negativa.";
+                } else {
+                    let meses = anos * 12;
+                    let dias = anos * 365;
+                    resultado.innerText = `Com ${anos} anos, você tem ${meses} meses e aproximadamente ${dias} dias.`;
+                }
+
+        </script>
+</body>
+</html>
