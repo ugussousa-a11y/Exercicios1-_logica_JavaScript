@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exxercicio 4</title>
+</head>
+<body>
+    
+    <h1> Escreva um algoritimo que lê</h1>
+
+    <script>
+
+let ipi = parseFloat(prompt("Digite o IPI (%):"));
+
+let codigo1 = prompt("Digite o código da peça 1:");
+let valor1  = parseFloat(prompt("Digite o valor unitário da peça 1:"));
+let quant1  = parseFloat(prompt("Digite a quantidade da peça 1:"));
+
+let codigo2 = prompt("Digite o código da peça 2:");
+let valor2  = parseFloat(prompt("Digite o valor unitário da peça 2:"));
+let quant2  = parseFloat(prompt("Digite a quantidade da peça 2:"));
+
+let total = (valor1 * quant1 + valor2 * quant2) * (ipi / 100 + 1);
+
+document.write("Total a pagar: R$ " + total.toFixed(2))
+
+
+
+    </script>
+
+
+</body>
+</html>

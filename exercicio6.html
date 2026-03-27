@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 6</title>
+</head>
+<body>
+    <h1>Desenvolva um algoritmo em Java que leia um número inteiro e imprima o seu
+antecessor e seu sucessor</h1>
+    
+    <script>
+
+        let numero = parseInt(prompt("Digite um número inteiro: "));
+
+        if (isNaN(numero)) {
+            alert("Erro: você deve digitar um número inteiro válido.");
+        } else {
+            let antecessor = numero - 1;
+            let sucessor = numero + 1;
+            alert(`O antecessor de ${numero} é ${antecessor} e o sucessor é ${sucessor}.`);
+            document.write(`O antecessor de ${numero} é ${antecessor} e o sucessor é ${sucessor}.`);
+        }
+
+    </script>
+    
+</body>
+</html>
